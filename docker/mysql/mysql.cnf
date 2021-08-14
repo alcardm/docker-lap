@@ -1,0 +1,7 @@
+[mysqld]
+sql_mode = "NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION"
+performance_schema = 0
+
+default_storage_engine = InnoDB
+collation_server = utf8_general_ci
+character_set_server = utf8

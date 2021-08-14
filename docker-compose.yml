@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   php:
-    container_name: php_cont
+    container_name: php
     build: ./docker/php/
     networks:
       - backend
@@ -9,7 +9,7 @@ services:
       - ./public/:/var/www/html/
       - ./logs/php/:/usr/local/etc/logs/
   apache:
-    container_name: apache_cont
+    container_name: apache
     build: ./docker/apache/
     depends_on:
       - php
@@ -21,6 +21,17 @@ services:
     volumes:
       - ./public/:/var/www/html/
       - ./logs/apache/:/usr/local/apache2/logs/
+  mysql:
+    container_name: mysql
+    build: ./docker/mysql/
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - backend
+    volumes:
+      - ./dbdata/:/var/lib/mysql
+      - ./logs/mysql:/var/log/mysql
 networks:
   frontend:
   backend:
