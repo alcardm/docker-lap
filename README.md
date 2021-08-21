@@ -33,11 +33,9 @@ You can place your files and folders anywhere in the _/public_ folder.
 
 Access project by browsing to [http://localhost](http://localhost) and it will use your public folder as the default location
 
----
+## phpMyAdmin
 
-## TODO
-
-- Add database administrator (_phpMyAdmin_ or _adminer_)
+Access with MySQL user and password through [http://localhost:81](http://localhost:81). Database storage will be saved at _/dbdata_ folder. You could setup phpMyAdmin configuration storage to activate extended features.
 
 ---
 
@@ -47,3 +45,4 @@ Access project by browsing to [http://localhost](http://localhost) and it will u
 - [iamgoodbytes/docker-LAMP-starter: A starter template if you want to get up and running quickly with php/mysql/apache in Docker (github.com)](https://github.com/iamgoodbytes/docker-LAMP-starter)
 - [wordpress/Dockerfile at master · docker-library/wordpress (github.com)](https://github.com/docker-library/wordpress/blob/master/latest/php7.4/fpm-alpine/Dockerfile)
 - [Mysql - Official Image | Docker Hub](https://hub.docker.com/_/mysql)
+- [Phpmyadmin - Official Image | Docker Hub](https://hub.docker.com/_/phpmyadmin)

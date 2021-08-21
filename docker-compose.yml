@@ -32,6 +32,20 @@ services:
     volumes:
       - ./dbdata/:/var/lib/mysql
       - ./logs/mysql:/var/log/mysql
+  phpmyadmin:
+    container_name: pma
+    image: phpmyadmin
+    depends_on:
+      - mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      PMA_HOST: mysql
+      PMA_VERBOSE : lamp-mysql
+    networks:
+      - frontend
+      - backend
+    ports:
+      - "81:80"
 networks:
   frontend:
   backend:

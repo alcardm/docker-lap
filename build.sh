@@ -15,5 +15,5 @@ fi
  
 docker-compose up -d --build
  
-docker exec php_cont chown -R root:www-data /usr/local/etc/logs
-docker exec apache_cont chown -R root:www-data /usr/local/apache2/logs
+#docker exec php_cont chown -R root:www-data /usr/local/etc/logs
+#docker exec apache_cont chown -R root:www-data /usr/local/apache2/logs
