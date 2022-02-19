@@ -55,5 +55,12 @@ Access project by browsing to [http://localhost](http://localhost) and it will u
 ## Resources
 
 - [inanzzz | Creating Apache, MySQL and PHP-FPM containers for a web application with Docker compose](http://www.inanzzz.com/index.php/post/su76/creating-apache-mysql-and-php-fpm-containers-for-a-web-application-with-docker-compose)
-- [iamgoodbytes/docker-LAMP-starter: A starter template if you want to get up and running quickly with php/mysql/apache in Docker (github.com)](https://github.com/iamgoodbytes/docker-LAMP-starter)
-- [wordpress/Dockerfile at master · docker-library/wordpress (github.com)](https://github.com/docker-library/wordpress/blob/master/latest/php7.4/fpm-alpine/Dockerfile)
+- [GitHub - iamgoodbytes/docker-LAMP-starter: A starter template if you want to get up and running quickly with php/mysql/apache in Docker](https://github.com/iamgoodbytes/docker-LAMP-starter)
+- [wordpress/Dockerfile at master · docker-library/wordpress · GitHub](https://github.com/docker-library/wordpress/blob/master/latest/php7.4/fpm-alpine/Dockerfile)
+
+**Dockerfile**
+
+- [Httpd - Official Image | Docker Hub](https://hub.docker.com/_/httpd)
+- [httpd/Dockerfile at · docker-library/httpd · GitHub](https://github.com/docker-library/httpd/blob/5bc2d71c4c1949d98a2e8671eadc5043b6c0b7f4/2.4/alpine/Dockerfile)
+- [Php - Official Image | Docker Hub](https://hub.docker.com/_/php)
+- [php/Dockerfile at master · docker-library/php · GitHub](https://github.com/docker-library/php/blob/master/7.4/alpine3.15/fpm/Dockerfile)
